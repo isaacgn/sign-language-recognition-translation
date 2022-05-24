@@ -1,4 +1,4 @@
-# transformer-slt
+# sign-Language-recognition-translation
 This repository gathers data and code supporting the experiments in the paper [Better Sign Language Translation with STMC-Transformer](https://www.aclweb.org/anthology/2020.coling-main.525/).
 
 ## Installation
@@ -6,11 +6,11 @@ This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 an
 
 The recommended way to install is shown below:
 ```
-# create a new virtual environment
-virtualenv --python=python3 venv
-source venv/bin/activate
+# create a new virtual environment in anaconda
+conda create -n _[virtual_env_name]_ python=_[x.x]_ anaconda
+conda activate _[virtual_env_name]_
 
-# clone the repo
+# Clone the repo using Git
 git clone https://github.com/kayoyin/transformer-slt.git
 cd transformer-slt
 
@@ -46,7 +46,7 @@ python  train.py -data data/dgs -save_model model -keep_checkpoint 1 \
 
 ### Inference
 ```
-python translate.py -model ["File path of the model"] -src ["File path of the source data file"] -output pred.txt -replace_unk -beam_size 4
+python translate.py -model _["File path of the model"]_ -src _["File path of the source data file"]_ -output pred.txt -replace_unk -beam_size 4
 ```
 
 ### Scoring
