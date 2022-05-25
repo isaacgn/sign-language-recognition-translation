@@ -10,7 +10,7 @@ The recommended way to install is shown below:
 # Create a new virtual environment in Anaconda Navigator
 
 ```conda create -n``` _[virtual_env_name]_ ```python=```_[x.x]_ ```anaconda```
-```conda activate``` _[virtual_env_name]_
+conda activate``` _[virtual_env_name]_
 
 
 # Clone the repo using Git
