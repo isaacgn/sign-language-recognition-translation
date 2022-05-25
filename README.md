@@ -6,28 +6,31 @@ This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 an
 
 The recommended way to install is shown below:
 
-```
-# Create a new virtual environment in Anaconda Navigator
-```
-conda create -n _[virtual_env_name]_ python=_[x.x]_ anaconda
-conda activate _[virtual_env_name]_
 
-```
+# Create a new virtual environment in Anaconda Navigator
+
+```conda create -n``` _[virtual_env_name]_ ```python=```_[x.x]_ ```anaconda```
+```conda activate``` _[virtual_env_name]_
+
+
 # Clone the repo using Git
+
 ```
 git clone https://github.com/kayoyin/transformer-slt.git
 cd transformer-slt
-
 ```
+
 # Install python dependencies
-```
 
+```
 pip install -r requirements.txt
-
 ```
+
 # Install OpenNMT-py
+
 ```
 python setup.py install
+```
 
 ## Sample Usage
 
