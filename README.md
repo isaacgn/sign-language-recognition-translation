@@ -5,24 +5,29 @@
 This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 and requires all of its dependencies (`torch==1.6.0`). Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
 
 The recommended way to install is shown below:
+
 ```
 # Create a new virtual environment in Anaconda Navigator
 ```
 conda create -n _[virtual_env_name]_ python=_[x.x]_ anaconda
 conda activate _[virtual_env_name]_
 
+```
 # Clone the repo using Git
+```
 git clone https://github.com/kayoyin/transformer-slt.git
 cd transformer-slt
 
+```
 # Install python dependencies
+```
+
 pip install -r requirements.txt
 
 ```
 # Install OpenNMT-py
-python setup.py install
-
 ```
+python setup.py install
 
 ## Sample Usage
 
@@ -46,10 +51,10 @@ python  train.py -data data/dgs -save_model model -keep_checkpoint 1 \
           -world_size 1 
 ```
 
+
 ### Inference
-```
-python translate.py -model _["File path of the model"]_ -src _["File path of the source data file"]_ -output pred.txt -replace_unk -beam_size 4
-```
+```python translate.py -model``` _["File path of the model"]_ ```-src``` _["File path of the source data file"]_ ```-output pred.txt -replace_unk -beam_size 4```
+
 
 ### Scoring
 ```
