@@ -33,7 +33,6 @@ pip install -r requirements.txt
 python setup.py install
 ```
 
-## Sample Usage
 
 ### Data processing
 
