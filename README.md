@@ -1,4 +1,4 @@
-# sign-Language-recognition-translation
+# sign-language-recognition-translation
 
 
 ## Installation
