@@ -1,46 +1,46 @@
 # sign-language-recognition-translation
 
 
-## Installation
+### Installation
 This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 and requires all of its dependencies (`torch==1.6.0`). Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
 
 The recommended way to install is shown below:
 
 
-## Create a new virtual environment in Anaconda Navigator
+### Create a new virtual environment in Anaconda Navigator
 
 ```conda create -n``` _[virtual_env_name]_ ```python=```_[x.x]_ ```anaconda```
 
 ```conda activate``` _[virtual_env_name]_
 
 
-## Clone the repo using Git
+### Clone the repo using Git
 
 ```
 git clone https://github.com/isaacgn/sign-language-recognition-translation.git
 cd sign-language-recognition-translation
 ```
 
-## Install python dependencies
+### Install python dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-## Install OpenNMT-py
+### Install OpenNMT-py
 
 ```
 python setup.py install
 ```
 
 
-## Data processing
+### Data processing
 
 ```
 onmt_preprocess -train_src data/phoenix2014T.train.gloss -train_tgt data/phoenix2014T.train.de -valid_src data/phoenix2014T.dev.gloss -valid_tgt data/phoenix2014T.dev.de -save_data data/dgs -lower 
 ```
 
-## Training
+### Training
 ```
 python  train.py -data data/dgs -save_model model -keep_checkpoint 1 \
           -layers 2 -rnn_size 512 -word_vec_size 512 -transformer_ff 2048 -heads 8  \
@@ -55,11 +55,11 @@ python  train.py -data data/dgs -save_model model -keep_checkpoint 1 \
 ```
 
 
-## Inference
+### Inference
 ```python translate.py -model``` _["File path of the model"]_ ```-src``` _["File path of the source data file"]_ ```-output pred.txt -replace_unk -beam_size 4```
 
 
-## Scoring
+### Scoring
 ```
 # BLEU-1,2,3,4
 python tools/bleu.py 1 pred.txt data/phoenix2014T.test.de
@@ -72,5 +72,5 @@ python tools/rouge.py pred.txt data/phoenix2014T.test.de
 
 ```
 
-## Link for Project PPT: 
+### Link for Project PPT: 
 <a href="https://drive.google.com/file/d/13LCNCB9qVgQk5f3S2C8eRFQ7jLqa5B84/view?usp=sharing"> Project PPT </a>
