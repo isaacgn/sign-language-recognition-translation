@@ -74,3 +74,6 @@ python tools/rouge.py pred.txt data/phoenix2014T.test.de
 
 ### Link for Project PPT: 
 <a href="https://drive.google.com/file/d/13LCNCB9qVgQk5f3S2C8eRFQ7jLqa5B84/view?usp=sharing"> Project PPT </a>
+
+### Link for Project Paper:
+<a href="https://drive.google.com/file/d/13L5asyB4U9F5uwqCAwaKK93knDd41qXS/view?usp=sharing"> Paper </a>
