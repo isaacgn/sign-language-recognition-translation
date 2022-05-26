@@ -17,8 +17,8 @@ The recommended way to install is shown below:
 # Clone the repo using Git
 
 ```
-git clone https://github.com/kayoyin/transformer-slt.git
-cd transformer-slt
+git clone https://github.com/isaacgn/sign-language-recognition-translation.git
+cd sign-language-recognition-translation
 ```
 
 # Install python dependencies
