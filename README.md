@@ -1,6 +1,7 @@
 # sign-language-recognition-translation
 
 
+# Steps for Execution
 ### Installation
 This code is based on [OpenNMT](https://github.com/OpenNMT/OpenNMT-py) v1.0.0 and requires all of its dependencies (`torch==1.6.0`). Additional requirements are [NLTK](https://www.nltk.org/) for NMT evaluation metrics.
 
@@ -71,6 +72,8 @@ python tools/bleu.py 4 pred.txt data/phoenix2014T.test.de
 python tools/rouge.py pred.txt data/phoenix2014T.test.de
 
 ```
+
+<br>
 
 ### Link for the Presentation file: 
 <a href="https://drive.google.com/file/d/13LCNCB9qVgQk5f3S2C8eRFQ7jLqa5B84/view?usp=sharing"> Project PPT </a>
