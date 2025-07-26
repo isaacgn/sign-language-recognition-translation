@@ -1,4 +1,4 @@
-# sign-language-recognition-translation
+# Sign-Language-Recognition-Translation
 
 <br>
 # Steps for Execution
